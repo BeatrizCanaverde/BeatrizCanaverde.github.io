@@ -8,7 +8,7 @@ document.getElementById("pub-list").innerHTML = PUBLICATIONS.map(p => `
   <article class="pub">
     <h3>${esc(p.title)}</h3>
     <p class="authors">${bold(p.authors)}</p>
-    <p class="venue"><em>${esc(p.venue)}</em>, ${p.year}</p>
+    <p class="venue"><em>${esc(p.venue)}</em></p>
     <p class="pub-links">${p.links.map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join("")}</p>
   </article>`).join("");
 
